@@ -12,7 +12,7 @@
 		
 		SIZE_UNITS = "px",
 		
-		MAX_SIZE = 20,
+		MAX_SIZE = 40,
 		MIN_SIZE = 1,
 			
     	// keys i care about

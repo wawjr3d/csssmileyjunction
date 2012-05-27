@@ -6,14 +6,14 @@
 	background: -moz-radial-gradient(75% 30%, circle, #fff 1em, yellow 25%);
 	font-size: 5px;
 	text-align: center; 
-	width: 40em;
-	height: 40em;
-	border: solid 1em #000;
+	width: 20em;
+	height: 20em;
+	border: solid .5em #000;
 	margin: auto;
-	border-radius: 25em;
-	-moz-box-shadow: 0 0 2em #666;
-	-webkit-box-shadow: 0 0 2em #666;
-	box-shadow: 0 0 2em #666;
+	border-radius: 12.5em;
+	-moz-box-shadow: 0 0 1em #666;
+	-webkit-box-shadow: 0 0 1em #666;
+	box-shadow: 0 0 1em #666;
 }
 
 .smiley * {
@@ -24,77 +24,78 @@
 	position: relative;
 	background: #FFF;
 	color: #000;
-	font: bold 1em/11em arial;
-	width: 5em;
-	height: 11em;
-	margin-top: 7em;
-	border: solid 1em #000;
-	border-radius: 20em;
+	font: bold 1em/5.5em arial;
+	width: 2.5em;
+	height: 5.5em;
+	margin-top: 3.5em;
+	border: solid .5em #000;
+	border-radius: 10em;
 }
 
 .smiley .eye:before {
 	content: "eyebrow";
 	position: absolute;
-	top: -3em;
+	top: -1.5em;
 	overflow: hidden;
 	background: transparent;
 	color: #FFF;
 	text-indent: -999em;
-	width: 7em;
-	height: 11em;
-	border-top: solid 1em #000;
-	border-radius: 20em;
+	width: 3.5em;
+	height: 5.5em;
+	border-top: solid .5em #000;
+	border-radius: 10em;
 }
 
 .smiley .eye:after {
 	content: "cornea";
 	position: absolute;
-	bottom: -.5em;
-	left: .5em;
+	bottom: -.25em;
+	left: .25em;
 	overflow: hidden;
 	background: #000;
 	color: #000;
 	text-indent: -999em;
-	width: 5em;
-	height: 5em;
-	border-top: solid 1em #000;
-	border-radius: 20em;
+	width: 2.5em;
+	height: 2.5em;
+	border-top: solid .5em #000;
+	border-radius: 10em;
 }
 
 .smiley .left.eye {
-	margin-right: 1.5em;
-	margin-left: 11em;
+	margin-right: .75em;
+	margin-left: 5.5em;
 }
 
 .smiley .left.eye:before {
-	left: -2em;
-	border-radius: 25em 5em 20em 20em;
+	left: -1em;
+	border-radius: 12.5em 2.5em 10em 10em;
 }
 
 .smiley .right.eye {
-	margin-left: 1.5em;
-	margin-right: 11em;
+	margin-left: .75em;
+	margin-right: 5.5em;
 }
 
 .smiley .right.eye:before {
-	right: -2em;
-	border-radius: 5em 25em 20em 20em;
+	right: -1em;
+	border-radius: 2.5em 12.5em 10em 10em;
 }
 
 .smiley .mouth {
-	width: 20em;
-	height: 20em;
-	margin-top: 5em;
-	border-top: solid 1em #000;
+	line-height: .5em;
+	width: 10em;
+	height: 10em;
+	margin-top: 2.5em;
+	border-top: solid .5em #000;
 }
 
 .elated .mouth { 
 	position: relative;
 	overflow: hidden;
-	width: 25em;
-	height: 25em;
-	margin-top: 2em;
-	border-top: solid .5em #000;
+	width: 12.5em;
+	height: 12.5em;
+	margin-top: 1em;
+	border-top: solid .25em #000;
 }
 
 .elated .mouth:after {
@@ -112,24 +113,24 @@
 	background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 4%,#000000 5%,#ffffff 6%,#ffffff 14%,#000000 15%,#ffffff 16%,#ffffff 24%,#000000 25%,#ffffff 26%,#ffffff 34%,#000000 35%,#ffffff 36%,#ffffff 44%,#000000 45%,#ffffff 46%,#ffffff 54%,#000000 55%,#ffffff 56%,#ffffff 64%,#000000 65%,#ffffff 66%,#ffffff 74%,#000000 75%,#ffffff 76%,#ffffff 84%,#000000 85%,#ffffff 86%,#ffffff 94%,#000000 95%,#ffffff 96%,#ffffff 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 4%,#000000 5%,#ffffff 6%,#ffffff 14%,#000000 15%,#ffffff 16%,#ffffff 24%,#000000 25%,#ffffff 26%,#ffffff 34%,#000000 35%,#ffffff 36%,#ffffff 44%,#000000 45%,#ffffff 46%,#ffffff 54%,#000000 55%,#ffffff 56%,#ffffff 64%,#000000 65%,#ffffff 66%,#ffffff 74%,#000000 75%,#ffffff 76%,#ffffff 84%,#000000 85%,#ffffff 86%,#ffffff 94%,#000000 95%,#ffffff 96%,#ffffff 100%); /* IE10+ */
 	background: linear-gradient(left,  #ffffff 0%,#ffffff 4%,#000000 5%,#ffffff 6%,#ffffff 14%,#000000 15%,#ffffff 16%,#ffffff 24%,#000000 25%,#ffffff 26%,#ffffff 34%,#000000 35%,#ffffff 36%,#ffffff 44%,#000000 45%,#ffffff 46%,#ffffff 54%,#000000 55%,#ffffff 56%,#ffffff 64%,#000000 65%,#ffffff 66%,#ffffff 74%,#000000 75%,#ffffff 76%,#ffffff 84%,#000000 85%,#ffffff 86%,#ffffff 94%,#000000 95%,#ffffff 96%,#ffffff 100%); /* W3C */
-	word-spacing: 2em;
+	word-spacing: 1em;
 	text-align: center;
 	width: 100%;
 	height: 80%;
 	padding-top: 20%;
-	border-bottom: solid .5em #000;
-	border-radius: 20em;
+	border-bottom: solid .25em #000;
+	border-radius: 10em;
 }
 
 .happy .mouth:before {
 	content: "left dimple";
 	position: absolute;
 	bottom: 25%;
-	left: -1.5em;
+	left: -.75em;
 	text-indent: -9999em;
-	width: 4em;
-	height: 3em;
-	border-top: solid .5em #000;
+	width: 2em;
+	height: 1.5em;
+	border-top: solid .25em #000;
 	-ms-transform: rotate(-20deg);
 	-moz-transform: rotate(-20deg);
 	-webkit-transform: rotate(-20deg);
@@ -138,23 +139,23 @@
 
 .happy .mouth {
 	position: relative;
-	width: 21em;
-	height: 20em;
-	margin-top: -9em;
+	width: 10em;
+	height: 10em;
+	margin-top: -4.5em;
 	border-top: 0 none;
-	border-bottom: solid 1em #000;
-	border-radius: 25em;
+	border-bottom: solid .5em #000;
+	border-radius: 12.5em;
 }
 
 .happy .mouth:after {
 	content: "right dimple";
 	position: absolute;
 	bottom: 25%;
-	right: -1.5em; 
+	right: -.75em; 
 	text-indent: -9999em;
-	width: 4em;
-	height: 3em;
-	border-top: solid .5em #000;
+	width: 2em;
+	height: 1.5em;
+	border-top: solid .25em #000;
 	-ms-transform: rotate(20deg);
 	-moz-transform: rotate(20deg);
 	-webkit-transform: rotate(20deg);
@@ -162,23 +163,23 @@
 }
 
 .frowny .mouth {
-	width: 20em;
-	height: 20em;
-	margin-top: 5em;
-	border-top: solid 1em #000;
-	border-radius: 5em 8em 8em;
+	width: 10em;
+	height: 10em;
+	margin-top: 2.5em;
+	border-top: solid .5em #000;
+	border-radius: 2.5em 4em 4em;
 }
 
 .inquisitive .left.eye:before {
-	top: -6em;	
+	top: -3em;	
 }
 
 .lying .eye:after {
-	top: -.5em;
+	top: -.25em;
 }
 
 .honest .eye:after {
-	left: -.5em;
+	left: -.25em;
 	right: auto;
 }
 
