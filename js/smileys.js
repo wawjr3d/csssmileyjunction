@@ -135,8 +135,8 @@
 		$form = $("form.pick-a-smiley");
 		$size = $form.find("input[name=" + FIELDS.SIZE + "]");
 		$smiley = $(".smiley");
-		$cssCode = $(".css.code");
-		$htmlCode = $(".html.code");
+		$cssCode = $("code.css");
+		$htmlCode = $("code.html");
 		
 		$form.submit(killSubmit);
 		$form.keydown(upAndDown);

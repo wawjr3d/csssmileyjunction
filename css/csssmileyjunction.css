@@ -14,7 +14,7 @@ body {
 	background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#9fee00 100%); /* IE10+ */
 	background: radial-gradient(center, ellipse cover,  #ffffff 0%,#9fee00 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#9fee00',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
-	font: normal 16px sans-serif;
+	font: normal 1em sans-serif;
 	text-align: center;
 }
 
@@ -27,15 +27,17 @@ h1 {
 
 form {
 	position: absolute;
-	top: 150px;
+	top: 50px;
 	left: 5%;
 	text-align: left;
 	z-index: 1;
 }
 
-input {
-	clear: left;
-	float: left;	
+label {	
+	display: block;
+	line-height: 1.3em;
+	padding-left: .3em;
+	cursor: pointer;
 }
 
 input[type=radio] {
@@ -44,17 +46,10 @@ input[type=radio] {
 	cursor: pointer;
 }
 
-label {
-	float: left;	
-	line-height: 1.3em;
-	padding-left: .3em;
-	cursor: pointer;
-}
-
 fieldset,
 legend,
-pre,
-pre:before {
+code,
+code:before {
 	background: #EEF;
 	background: rgba(238, 238, 255, .6);
 	border: solid 1px #CCC;
@@ -66,15 +61,14 @@ pre:before {
 
 fieldset:hover,
 fieldset:hover legend,
-pre:hover,
-pre:hover:before {
+code:hover,
+code:hover:before {
 	background: rgba(238, 238, 255, .9);
 }
 
 fieldset {
 	clear: left;
 	float: left;
-	font-size: .8em;
 	width: 150px;
 	padding: .6em .6em 1em;
 	margin-top: 1em;
@@ -117,18 +111,18 @@ legend {
 	z-index: 1;
 }
 
-pre {
+code {
 	display: block;
 	position: relative;
 	color: #333;
-	font-size: .8em;
-	line-height: 1.2em;
+	font: normal 1em/1.2em sans-serif;
+	white-space: pre;
 	min-width: 220px;
 	margin-top: 2em;
 	padding: 20px;
 }
 
-pre:before {
+code:before {
 	position: absolute;	
 	top: -15px;
 	left: 10px;
@@ -136,10 +130,10 @@ pre:before {
 	padding: .4em;	
 }
 
-pre.css:before {
+code.css:before {
 	content: "CSS";
 }
 
-pre.html:before {
+code.html:before {
 	content: "HTML";
 }
