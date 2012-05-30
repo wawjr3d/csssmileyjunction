@@ -198,3 +198,42 @@
 	transform: rotate(-10deg);
 	border-radius: 0;
 }
+
+.constipated .eye {
+	width: 4em;
+	height: 0;
+	margin-top: 8em;
+	border-width: .5em 0 0;
+	border-radius: 0;
+}
+
+.constipated .eye:before {
+	top: -1.5em;
+	height: 0;
+}
+
+.constipated .left.eye {
+	margin-left: 4em;
+}
+
+.constipated .left.eye:before {
+	left: 0;
+	border-radius: 0;
+	-ms-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+
+.constipated .right.eye:before {
+	right: 0;
+	border-radius: 0;
+	-ms-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+}
+
+.constipated .eye:after {
+	display: none;
+}

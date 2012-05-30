@@ -4,7 +4,7 @@
 	
 	var AVAILABLE_MOODS = ["elated", "happy", "frowny"].join(" "),
 		
-		AVAILABLE_SPECIFICS = ["inquisitive", "lying", "honest", "angry"].join(" "),
+		AVAILABLE_SPECIFICS = ["inquisitive", "lying", "honest", "angry", "constipated"].join(" "),
 		
 		ALL_SMILEYS = [AVAILABLE_MOODS, AVAILABLE_SPECIFICS].join(" "),
 	
