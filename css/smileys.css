@@ -5,6 +5,7 @@
 	background: -webkit-radial-gradient(75% 30%, circle, #fff 1em, yellow 25%);
 	background: -moz-radial-gradient(75% 30%, circle, #fff 1em, yellow 25%);
 	font-size: 5px;
+	word-spacing: 0;
 	line-height: 1em;
 	text-align: center; 
 	width: 20em;
