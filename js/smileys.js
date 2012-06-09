@@ -62,8 +62,8 @@
 		$smiley.css("fontSize", size + "px");
 
 		$smiley.removeClass(ALL_SMILEYS);
-		$smiley.addClass($form.find("input[name=" + FIELDS.MOOD + "]:checked").val());
-		$smiley.addClass($form.find("input[name=" + FIELDS.SPECIFIC + "]:checked").val());
+		$smiley.addClass($form.find("select[name=" + FIELDS.MOOD + "]").val());
+		$smiley.addClass($form.find("select[name=" + FIELDS.SPECIFIC + "]").val());
 		
 		updateCode();
 	}
@@ -141,7 +141,7 @@
 		$form.submit(killSubmit);
 		$form.keydown(upAndDown);
 		
-		$form.find("input[name=" + FIELDS.MOOD + "], input[name=" + FIELDS.SPECIFIC + "]").change(pickSmiley);
+		$form.find("select[name=" + FIELDS.MOOD + "], select[name=" + FIELDS.SPECIFIC + "]").change(pickSmiley);
 		$size.change(pickSmiley)
 		
 		inititializeSmiley();
