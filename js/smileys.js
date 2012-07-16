@@ -1,5 +1,4 @@
 (function(global, $) {
-
 	"use strict";
 	
 	var AVAILABLE_MOODS = ["elated", "happy", "frowny"].join(" "),
@@ -29,6 +28,8 @@
 		TYPE = "{{type}}",
 		SIZE = "{{size}}",
 		
+		smileyLink,
+		
 		HTML = ["<div class='" + TYPE + "'>",
 					"\t<div class='left eye'></div>",
 					"\t<div class='right eye'></div>",
@@ -50,10 +51,29 @@
 					.replace(/"/g,'&quot;');
 	};
 
+    function addCopyButton($code, text) {
+        var $copyButton = $("<span class='copy'/>");
+        
+        $code.prepend($copyButton);
+        
+        $copyButton.zclip({
+            path: "zclip/ZeroClipboard.swf",
+            copy: text,
+            afterCopy: function() {
+                console.log("copied");
+            }
+        });
+    }
 	
 	function updateCode() {
-		$cssCode.html(CSS.replace(SIZE, $size.val()).escapeHTML());
-		$htmlCode.html(HTML.replace(TYPE, $smiley[0].className).escapeHTML());
+	    var css = CSS.replace(SIZE, $size.val()),
+	        html = HTML.replace(TYPE, $smiley[0].className);
+	    
+		$cssCode.html(smileyLink.escapeHTML() + "\n" + css.escapeHTML());
+		addCopyButton($cssCode, css);
+		
+		$htmlCode.html(html.escapeHTML());
+		addCopyButton($htmlCode, html);
 	}
 	
 	function pickSmiley() {
@@ -137,6 +157,9 @@
 		$smiley = $(".smiley");
 		$cssCode = $("code.css");
 		$htmlCode = $("code.html");
+		
+		var linkHref = $("link[href$='smileys.css']")[0].href;
+		smileyLink = "<link href='" + linkHref + "' type='text/css' rel='stylesheet'>";
 		
 		$form.submit(killSubmit);
 		$form.keydown(upAndDown);

@@ -130,3 +130,13 @@ code.css:before {
 code.html:before {
 	content: "HTML";
 }
+
+code .copy {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url(../images/copy.png) no-repeat center center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
