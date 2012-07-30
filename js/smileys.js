@@ -69,7 +69,7 @@
 	    var css = CSS.replace(SIZE, $size.val()),
 	        html = HTML.replace(TYPE, $smiley[0].className);
 	    
-		$cssCode.html(smileyLink.escapeHTML() + "\n" + css.escapeHTML());
+		$cssCode.html(css.escapeHTML());
 		addCopyButton($cssCode, css);
 		
 		$htmlCode.html(html.escapeHTML());
@@ -141,11 +141,11 @@
 		}
 		
 		if (mood) {
-			$form.find("input[name=" + FIELDS.MOOD + "][value=" + mood + "]").prop("checked", true);
+			$form.find("select[name=" + FIELDS.MOOD + "] option[value=" + mood + "]").prop("selected", true);
 		}
 		
 		if (specific) {
-			$form.find("input[name=" + FIELDS.SPECIFIC + "][value=" + specific + "]").prop("checked", true);
+			$form.find("select[name=" + FIELDS.SPECIFIC + "] option[value=" + specific + "]").prop("selected", true);
 		}
 		
 		pickSmiley();
