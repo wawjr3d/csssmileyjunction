@@ -1,9 +1,9 @@
-(function(global, $) {
+(function(global, $, undefined) {
 	"use strict";
 	
-	var AVAILABLE_MOODS = ["elated", "happy", "frowny"].join(" "),
+	var AVAILABLE_MOODS = ["normal", "elated", "happy", "frowny"].join(" "),
 		
-		AVAILABLE_SPECIFICS = ["inquisitive", "lying", "honest", "angry", "constipated"].join(" "),
+		AVAILABLE_SPECIFICS = ["normal", "inquisitive", "lying", "honest", "angry", "constipated"].join(" "),
 		
 		ALL_SMILEYS = [AVAILABLE_MOODS, AVAILABLE_SPECIFICS].join(" "),
 	
