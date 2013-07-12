@@ -1,3 +1,9 @@
+.smiley .eye,
+.smiley .eye:before,
+.smiley .eye:after {
+    transition: all .5s ease;
+}
+
 .smiley {
     display: inline-block;
     overflow: hidden;
