@@ -1,1 +1,4 @@
 .project
+.eslintrc.json
+node_modules
+package.json
