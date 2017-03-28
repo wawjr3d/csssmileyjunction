@@ -13,7 +13,7 @@
     font-size: 5px;
     word-spacing: 0;
     line-height: 1em;
-    text-align: center; 
+    text-align: center;
     width: 20em;
     height: 20em;
     border: solid .5em #000;
@@ -24,7 +24,8 @@
     box-shadow: 0 0 1em #666;
 }
 
-.smiley * {
+.smiley .eye,
+.smiley .mouth {
     display: inline-block;
 }
 
@@ -97,7 +98,7 @@
     border-top: solid .5em #000;
 }
 
-.elated .mouth { 
+.elated.smiley .mouth {
     position: relative;
     overflow: hidden;
     width: 12.5em;
@@ -106,8 +107,8 @@
     border-top: solid .25em #000;
 }
 
-.elated .mouth:after {
-    content: " "; 
+.elated.smiley .mouth:after {
+    content: " ";
     position: absolute;
     top: -50%;
     left: 0;
@@ -130,7 +131,7 @@
     border-radius: 10em;
 }
 
-.happy .mouth:before {
+.happy.smiley .mouth:before {
     content: "left dimple";
     position: absolute;
     bottom: 25%;
@@ -145,7 +146,7 @@
     transform: rotate(-20deg);
 }
 
-.happy .mouth {
+.happy.smiley .mouth {
     position: relative;
     width: 10em;
     height: 10em;
@@ -155,11 +156,11 @@
     border-radius: 12.5em;
 }
 
-.happy .mouth:after {
+.happy.smiley .mouth:after {
     content: "right dimple";
     position: absolute;
     bottom: 25%;
-    right: -.75em; 
+    right: -.75em;
     text-indent: -9999em;
     width: 2em;
     height: 1.5em;
@@ -170,7 +171,7 @@
     transform: rotate(20deg);
 }
 
-.frowny .mouth {
+.frowny.smiley .mouth {
     width: 10em;
     height: 10em;
     margin-top: 2.5em;
@@ -178,20 +179,20 @@
     border-radius: 2.5em 4em 4em;
 }
 
-.inquisitive .left.eye:before {
-    top: -3em;  
+.inquisitive.smiley .left.eye:before {
+    top: -3em;
 }
 
-.lying .eye:after {
+.lying.smiley .eye:after {
     top: -.25em;
 }
 
-.honest .eye:after {
+.honest.smiley .eye:after {
     left: -.25em;
     right: auto;
 }
 
-.angry .left.eye:before {
+.angry.smiley .left.eye:before {
     -ms-transform: rotate(15deg);
     -moz-transform: rotate(15deg);
     -webkit-transform: rotate(15deg);
@@ -199,7 +200,7 @@
     border-radius: 0;
 }
 
-.angry .right.eye:before {
+.angry.smiley .right.eye:before {
     -ms-transform: rotate(-15deg);
     -moz-transform: rotate(-15deg);
     -webkit-transform: rotate(-15deg);
@@ -207,7 +208,7 @@
     border-radius: 0;
 }
 
-.constipated .eye {
+.constipated.smiley .eye {
     width: 4em;
     height: 0;
     margin-top: 8em;
@@ -215,16 +216,16 @@
     border-radius: 0;
 }
 
-.constipated .eye:before {
+.constipated.smiley .eye:before {
     top: -1.5em;
     height: 0;
 }
 
-.constipated .left.eye {
+.constipated.smiley .left.eye {
     margin-left: 4em;
 }
 
-.constipated .left.eye:before {
+.constipated.smiley .left.eye:before {
     left: 0;
     border-radius: 0;
     -ms-transform: rotate(30deg);
@@ -233,7 +234,7 @@
     transform: rotate(30deg);
 }
 
-.constipated .right.eye:before {
+.constipated.smiley .right.eye:before {
     right: 0;
     border-radius: 0;
     -ms-transform: rotate(-30deg);
@@ -242,6 +243,6 @@
     transform: rotate(-30deg);
 }
 
-.constipated .eye:after {
+.constipated.smiley .eye:after {
     display: none;
 }
